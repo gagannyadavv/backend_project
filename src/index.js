@@ -10,7 +10,18 @@ dotenv.config({
 
 connect_db()
 
+.then(()=>{
+  
+  app.listen(process.env.PORT || 8000,()=>{
+    console.log(`server is running at ${process.env.PORT}`);
+    
+  })
+})
 
+.catch((error)=>{
+  console.log("Mongodb connection failed!!",error);
+  
+})
 
 
 
@@ -48,5 +59,11 @@ const app = express()
         throw error
     }
 })()
+
+
+api - req , res in express 
+after async function , call promises , cors ,app.use , creating utilities , nodejs api error .
+
+
 
 */
