@@ -65,5 +65,7 @@ api - req , res in express
 after async function , call promises , cors ,app.use , creating utilities , nodejs api error .
 
 
+middleware hooks , jwt , bcrypt...
+
 
 */
